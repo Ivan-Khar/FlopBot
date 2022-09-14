@@ -5,6 +5,7 @@ import net.dv8tion.jda.api.audit.ActionType;
 import net.dv8tion.jda.api.audit.AuditLogEntry;
 import net.dv8tion.jda.api.entities.Mentions;
 import net.dv8tion.jda.api.entities.MessageEmbed;
+import net.dv8tion.jda.api.entities.NewsChannel;
 import net.dv8tion.jda.api.entities.UserSnowflake;
 import net.dv8tion.jda.api.events.ReadyEvent;
 import net.dv8tion.jda.api.events.guild.member.GuildMemberJoinEvent;
@@ -24,6 +25,19 @@ import static com.aqupd.flopbot.Main.*;
 public class Listener extends ListenerAdapter {
   @Override
   public void onReady(@NotNull ReadyEvent event) {
+
+    /* use this for mod updates for now
+    EmbedBuilder eb = new EmbedBuilder();
+    eb.setTitle("NameBros 1.0");
+    eb.setDescription("Mod that makes entities with the same name friendly to each others.\n" + "https://github.com/Ivan-Khar/Name-Bros");
+    eb.setColor(Color.decode("#ff8c00"));
+    eb.setTimestamp(Instant.now());
+    eb.addField("Curseforge:", "https://www.curseforge.com/minecraft/mc-mods/namebros", false);
+    eb.addField("Modrinth:", "https://modrinth.com/mod/namebros ", false);
+    eb.setThumbnail("https://i.imgur.com/VuEO2A5.png");
+    eb.setFooter("Ivan_Khar", "https://avatars.githubusercontent.com/u/47220198");
+    event.getJDA().getChannelById(NewsChannel.class, 1014473182104784976L).sendMessageEmbeds(eb.build()).queue();
+    */
   }
 
   @Override
