@@ -28,13 +28,13 @@ public class Listener extends ListenerAdapter {
 
     /* use this for mod updates for now
     EmbedBuilder eb = new EmbedBuilder();
-    eb.setTitle("NameBros 1.0");
-    eb.setDescription("Mod that makes entities with the same name friendly to each others.\n" + "https://github.com/Ivan-Khar/Name-Bros");
+    eb.setTitle("Manhunt-fabric 1.0.3");
+    eb.setDescription("Fork of Manhunt mod that got updated to 1.19 with new features.\n" + "https://github.com/Ivan-Khar/manhunt-fabric");
     eb.setColor(Color.decode("#ff8c00"));
     eb.setTimestamp(Instant.now());
-    eb.addField("Curseforge:", "https://www.curseforge.com/minecraft/mc-mods/namebros", false);
-    eb.addField("Modrinth:", "https://modrinth.com/mod/namebros ", false);
-    eb.setThumbnail("https://i.imgur.com/VuEO2A5.png");
+    eb.addField("Github:", "https://github.com/Ivan-Khar/manhunt-fabric/releases/tag/Manhunt-v1.0.3", false);
+    //eb.addField("Modrinth:", "https://modrinth.com/mod/namebros ", false);
+    //eb.setThumbnail("https://i.imgur.com/VuEO2A5.png");
     eb.setFooter("Ivan_Khar", "https://avatars.githubusercontent.com/u/47220198");
     event.getJDA().getChannelById(NewsChannel.class, 1014473182104784976L).sendMessageEmbeds(eb.build()).queue();
     */
