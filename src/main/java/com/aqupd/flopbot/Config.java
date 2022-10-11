@@ -39,19 +39,17 @@ public class Config {
   public void save() {
     try {
       if (!confFile.exists()) confFile.createNewFile();
-      if (confFile.exists()) {
-        JsonObject jo = new JsonObject();
-        jo.add("token", new JsonPrimitive(TOKEN));
-        jo.add("prefix", new JsonPrimitive(PREFIX));
+      JsonObject jo = new JsonObject();
+      jo.add("token", new JsonPrimitive(TOKEN));
+      jo.add("prefix", new JsonPrimitive(PREFIX));
 
-        JsonArray owners = new JsonArray();
-        for(String owner: OWNERS) { owners.add(owner); }
-        jo.add("owners", owners);
+      JsonArray owners = new JsonArray();
+      for(String owner: OWNERS) { owners.add(owner); }
+      jo.add("owners", owners);
 
-        PrintWriter printwriter = new PrintWriter(new FileWriter(confFile));
-        printwriter.print(gson.toJson(jo));
-        printwriter.close();
-      }
+      PrintWriter printwriter = new PrintWriter(new FileWriter(confFile));
+      printwriter.print(gson.toJson(jo));
+      printwriter.close();
     } catch (IOException ex) {
       LOGGER.trace("Got problems saving conf. file", ex);
     }
